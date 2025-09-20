@@ -1,0 +1,18 @@
+// abstracts
+@import "./src/sass/abstracts/fonts";
+@import "./src/sass/abstracts/variables.scss";
+@import "./src/sass/abstracts/mixins.scss";
+
+// base
+//@import "./src/sass/base/reset.scss";
+@import "./src/sass/base/base-banners.scss";
+
+// layouts
+@import "./src/sass/layouts/main.scss";
+@import "./src/sass/layouts/event.scss";
+
+// // utilities
+// // @import "./src/sass/utilities/align-justify.scss";
+// // @import "./src/sass/utilities/display.scss";
+// // @import "./src/sass/utilities/spacing.scss";
+// // @import "./src/sass/utilities/text-align.scss";

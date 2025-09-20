@@ -1,0 +1,31 @@
+{
+  "name": "inline-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "node scripts/build.js",
+    "start": "vite preview",
+    "dev:usa": "npm run dev prod.usa.eng.uf",
+    "build:usa": "npm run build prod.usa.eng.uf && npm run build prod.usa.chi.uf",
+    "build:sgp": "npm run build prod.sgp.chi.uf && npm run build prod.sgp.eng.uf",
+    "build:ind": "npm run build prod.ind.idn.uf && npm run build prod.ind.eng.uf",
+    "build:mys": "npm run build prod.mys.mla.uf && npm run build prod.mys.chi.uf && npm run build prod.mys.eng.uf",
+    "build:gbr": "npm run build prod.gbr.eng.uf",
+    "build:aus": "npm run build prod.aus.eng.uf && npm run build prod.aus.chi.uf",
+    "build:all": "npm run build:usa && npm run build:sgp && npm run build:ind && npm run build:mys && npm run build:gbr && npm run build:aus"
+  },
+  "devDependencies": {
+    "@rollup/pluginutils": "^5.1.4",
+    "postcss": "^8.5.2",
+    "sass-embedded": "^1.83.4",
+    "vite": "^6.0.5",
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-html": "^3.2.2",
+    "vite-plugin-singlefile": "^2.1.0"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}
