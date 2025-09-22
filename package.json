@@ -9,13 +9,15 @@
     "start": "vite preview",
     "dev:usa": "npm run dev prod.usa.eng.uf",
     "build:usa": "npm run build prod.usa.eng.uf && npm run build prod.usa.chi.uf",
+    "build:can": "npm run build prod.can.eng.uf && npm run build prod.can.chi.uf",
     "build:sgp": "npm run build prod.sgp.chi.uf && npm run build prod.sgp.eng.uf",
     "build:ind": "npm run build prod.ind.idn.uf && npm run build prod.ind.eng.uf",
     "build:mys": "npm run build prod.mys.mla.uf && npm run build prod.mys.chi.uf && npm run build prod.mys.eng.uf",
     "build:gbr": "npm run build prod.gbr.eng.uf",
     "build:hkg": "npm run build prod.hkg.eng.uf && npm run build prod.hkg.chi.uf",
+    "build:twn": "npm run build prod.twn.eng.uf && npm run build prod.twn.chi.uf",
     "build:aus": "npm run build prod.aus.eng.uf && npm run build prod.aus.chi.uf",
-    "build:all": "npm run build:usa && npm run build:sgp && npm run build:ind && npm run build:mys && npm run build:gbr && npm run build:hkg && npm run build:aus"
+    "build:all": "npm run build:usa && npm run build:can && npm run build:sgp && npm run build:ind && npm run build:mys && npm run build:gbr && npm run build:hkg && npm run build:twn && npm run build:aus"
   },
   "devDependencies": {
     "@rollup/pluginutils": "^5.1.4",
